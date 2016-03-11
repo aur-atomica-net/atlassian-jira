@@ -25,7 +25,7 @@ sha256sums=('3b4c518e7a03fb3e368c8bc89e5420bfb8ca70822b761e5b27f32988849fe644'
 
 package() {
   mkdir -p "$pkgdir/opt/atlassian-jira/"
-  cp -r "$srcdir/atlassian-jira-$pkgver-standalone/"* "$pkgdir/opt/atlassian-jira/"
+  cp -r "$srcdir/atlassian-jira-software-${pkgver}-standalone/"* "$pkgdir/opt/atlassian-jira/"
   # remove unneeded *.bat files
   find "$pkgdir/opt/atlassian-jira/bin" -name '*.bat' -type f -exec rm "{}" \;
 
