@@ -8,7 +8,7 @@ pkgdesc="Bug tracking, issue tracking and project management software"
 url="https://www.atlassian.com/software/jira"
 license=('custom')
 arch=('i686' 'x86_64')
-depends=('java-runtime-jre>=7')
+depends=('java-environment>=7')
 optdepends=('mysql-connector-java: connect to MySQL'
             'libcups: used by bin/config.sh'
             'fontconfig: used by bin/config.sh')
